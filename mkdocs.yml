@@ -1,5 +1,5 @@
 site_name: TeleCart Документация
-site_url: https://mydomain.org
+site_url: https://nikitakiselev.github.io/telecart-docs/
 theme:
   name: material
   language: ru
