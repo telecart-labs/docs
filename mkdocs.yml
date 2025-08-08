@@ -1,0 +1,6 @@
+site_name: TeleCart Документация
+site_url: https://mydomain.org
+theme:
+  name: material
+  language: ru
+
