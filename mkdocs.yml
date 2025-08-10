@@ -1,6 +1,40 @@
 site_name: TeleCart Документация
 site_url: https://nikitakiselev.github.io/telecart-docs/
+
+nav:
+  - index.md
+  - install.md
+  - telegram.md
+  - update.md
+  - uninstall.md
+  - contacts.md
+
 theme:
   name: material
   language: ru
+  features:
+    - glightbox
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
