@@ -14,11 +14,23 @@ theme:
   language: ru
   features:
     - glightbox
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    - search.highlight
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.blocks.caption
+  - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
 
 plugins:
   - search
