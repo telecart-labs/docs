@@ -8,6 +8,7 @@ nav:
   - update.md
   - uninstall.md
   - contacts.md
+  - architecture.md
 
 theme:
   name: material
