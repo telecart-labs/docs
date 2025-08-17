@@ -3,7 +3,7 @@
 **TeleCart** — это модуль, который позволяет развернуть интернет-магазин в Telegram на основе OpenCart. Максимально
 просто, быстро и без сложных настроек.
 
-![Внешний вид TeleCart магазина](images/telecart-preview.png)
+<iframe width="720" height="405" src="https://rutube.ru/play/embed/c1e690230db15f4e7d8901a60e8ffcb5/" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 На этой странице вы узнаете, как буквально за **10 минут** получить готовый интернет-магазин в Telegram.
 
