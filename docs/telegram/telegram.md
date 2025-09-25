@@ -2,9 +2,11 @@
 
 ## Введение
 
-Этот раздел подразумевает, что модуль уже установлен и инициализирован. Если нет, то сначала нужно [выполнить установку](install.md).
+Этот раздел подразумевает, что модуль уже установлен и инициализирован. Если нет, то сначала нужно [выполнить установку](../install.md).
 
-На текущий момент существует 2 способа создать бота в Telegram. С помощью текстовых команд в чате через [@BotFather](https://t.me/botfather), либо использовать официальный Mini App, который прикреплён к BotFather. Использование Mini App намного удобнее. В этой статье будет описан второй способ.
+На текущий момент существует 2 способа создать бота в Telegram. С помощью текстовых команд в чате через [@BotFather](https://t.me/botfather), 
+либо использовать официальный Mini App, который прикреплён к BotFather. Использование Mini App намного удобнее. 
+В этой статье будет описан второй способ.
 
 Минимально необходимые действия, чтобы получить работающий Telegram-магазин:
 
@@ -19,18 +21,18 @@
 В Telegram для этого используется специальный сервисный аккаунт — [@BotFather](https://t.me/botfather).
 Найдите его через поиск в Telegram, откройте и нажмите Start.
 
-![Telegram BotFather](images/telegram-bot-father.png){ width=500, loading=lazy }
+![Telegram BotFather](../images/telegram-bot-father.png){ width=500, loading=lazy }
  /// caption
 Telegram BotFather
 ///
 
 Для того чтобы открыть **BotFather** как Mini App, нужно нажать на кнопку **Open**, слева от поля ввода сообщения. 
 
-![Кнопка открытия BotFather Mini App](images/bot_father_miniapp_btn.png){ align=center, loading=lazy }
+![Кнопка открытия BotFather Mini App](../images/bot_father_miniapp_btn.png){ align=center, loading=lazy }
 
 Откроется Min iApp приложение.
 
-![BotFather Telegram MiniApp](images/telegram_botfather_miniapp.png){ width=300, loading=lazy }
+![BotFather Telegram MiniApp](../images/telegram_botfather_miniapp.png){ width=300, loading=lazy }
 /// caption
 BotFather Telegram Mini App
 ///
@@ -47,14 +49,14 @@ BotFather Telegram Mini App
 3. **About (About info)** — не обязательное. Максимум 120 символов. Пользователи видят его в профиле бота.
 4. **Bot Username** - уникальный username, используемый для ссылок. Длина от 5 до 32 символов, латиница, цифры, подчёркивания, обязательно оканчивается на `bot`.
 
-![Форма создания нового Telegram Bot](images/new_telegram_bot_form.png){ width=300, loading=lazy }
+![Форма создания нового Telegram Bot](../images/new_telegram_bot_form.png){ width=300, loading=lazy }
 /// caption
 Форма создания нового Telegram Bot
 ///
 
 Нажмите кнопку "Create Bot" чтобы создать бота.
 
-![Просмотр созданного Telegram Bot](images/created_tg_bot.png){ width=300, loading=lazy }
+![Просмотр созданного Telegram Bot](../images/created_tg_bot.png){ width=300, loading=lazy }
 /// caption
 Просмотр созданного Telegram Bot
 ///
@@ -67,14 +69,14 @@ BotFather Telegram Mini App
 
 В окне нажмите на кнопку "Отправить сообщение", чтобы запустить бота.
 
-![Telegram Bot Отправить сообщение](images/tg_bot_send_message_btn.png){ width=300, loading=lazy }
+![Telegram Bot Отправить сообщение](../images/tg_bot_send_message_btn.png){ width=300, loading=lazy }
 /// caption
 Кнопка отправки сообщения боту.
 ///
 
 Запустится бот, там нажмите кнопку "Старт", чтобы начать общение с ботом, либо отправьте команду `/start` в чат.
 
-![Отправка /start боту](images/tg_bot_start.png){ width=300, loading=lazy }
+![Отправка /start боту](../images/tg_bot_start.png){ width=300, loading=lazy }
 /// caption
 Отправка команды `/start` боту
 ///
@@ -84,7 +86,7 @@ BotFather Telegram Mini App
 
 Для создания Mini App, нужно зайти в [@BotFather](https://t.me/botfather), выбрать своего бота и в разделе Settings нажать на кнопку Mini Apps, чтобы перейти в форму просмотра и создания.
 
-![img.png](images/create_mini_app_btn.png){ width=300, loading=lazy }
+![img.png](../images/create_mini_app_btn.png){ width=300, loading=lazy }
 /// caption
 Кнопка просмотра Mini App, привязанного к боту.
 ///
@@ -95,14 +97,14 @@ BotFather Telegram Mini App
 2. **Main App** - это кнопка для запуска магазина, которая отображается в форме информации о боте.
 3. **Direct Link** - ссылка, с помощью которой можно будет напрямую запустить магазин. Эту ссылку удобно пересылать в группы, в личные сообщения.
 
-![Форма настройки Telegram Mini App](images/tg_mini_app_exec.png){ width=300, loading=lazy }
+![Форма настройки Telegram Mini App](../images/tg_mini_app_exec.png){ width=300, loading=lazy }
 /// caption
 Форма настройки Telegram Mini App
 ///
 
 Каждый из этих способов требуется ссылку для Telegram Mini App. Эту ссылку можно найти в настройках TeleCart на вкладке Telegram.
 
-![Ссылка для Telegram Mini App](images/telecart-tg-mini-app-url.png){ width=500, loading=lazy }
+![Ссылка для Telegram Mini App](../images/telecart-tg-mini-app-url.png){ width=500, loading=lazy }
 /// caption
 Ссылка для Telegram Mini App
 ///
@@ -116,14 +118,14 @@ BotFather Telegram Mini App
 1. **URL** - Ссылка для Telegram Mini App. Берётся из настроек TeleCart.
 2. **Title** - Текст на кнопке, любой текст, например "Магазин".
 
-![Форма настройки Menu Button](images/tg-menu-btn-form.png){ width=300, loading=lazy }
+![Форма настройки Menu Button](../images/tg-menu-btn-form.png){ width=300, loading=lazy }
 /// caption
 Форма настройки Menu Button
 ///
 
 Теперь в чате с ботом появилась кнопка "Магазин"
 
-![Демонстрация кнопки открытия магазина в чате с ботом](images/tg-bot-menu-btn.png){ width=300, loading=lazy }
+![Демонстрация кнопки открытия магазина в чате с ботом](../images/tg-bot-menu-btn.png){ width=300, loading=lazy }
 /// caption
 Демонстрация кнопки открытия магазина в чате с ботом
 ///
@@ -139,7 +141,7 @@ BotFather Telegram Mini App
 Здесь требуется задать только ссылку для Telegram Mini App. Берётся из настроек TeleCart.  
 Так же желательно выставить полноэкранный режим работы.
 
-![Конфигурация Mini App](images/main_app_conf.png){ width=300, loading=lazy }
+![Конфигурация Mini App](../images/main_app_conf.png){ width=300, loading=lazy }
 /// caption
 Конфигурация Mini App
 ///
@@ -153,7 +155,7 @@ BotFather Telegram Mini App
     
     Возможно нужно подождать несколько минут, прежде чем Telegram обновит свои конфигурации и сбросит кеш, прежде чем появится кнопка.
 
-![Кнопка запуска магазина из формы информации о боте](images/tg-direct-link-config-form.png){ width=300, loading=lazy }
+![Кнопка запуска магазина из формы информации о боте](../images/tg-direct-link-config-form.png){ width=300, loading=lazy }
 /// caption
 Кнопка запуска магазина из формы информации о боте
 ///
@@ -164,12 +166,12 @@ BotFather Telegram Mini App
 Удобство этой ссылки заключается в том, что её можно отправить в любом Telegram сообщение, в e-mail рассылке, указать на сайте, 
 либо, например, сгенерировать QR код, распечатать и наклеить на дверь оффлайн магазина, если он есть. Это удобно и выглядит современно, вызывая доверие покупателей.
 
-![Демонстрация Direct Link, отправленной в чате](tg-direct-link-example.png)
+![Демонстрация Direct Link, отправленной в чате](../tg-direct-link-example.png)
 /// caption
 Демонстрация Direct Link, отправленной в чате Telegram.
 ///
 
-![Демонстрация Direct Link, отправленной в приложение Apple Mail.](images/tg-direct-link-apple-mail-example.png){ width=500, loading=lazy }
+![Демонстрация Direct Link, отправленной в приложение Apple Mail.](../images/tg-direct-link-apple-mail-example.png){ width=500, loading=lazy }
 /// caption
 Демонстрация Direct Link, отправленной в приложение Apple Mail.
 ///
@@ -184,7 +186,7 @@ BotFather Telegram Mini App
 * **Metadata** - картинка, заголовок и описание. Это будет использоваться при отображении ссылки в чатах и личных сообщениях. Лучше задать, для того, чтобы ссылки вызывали доверие.
 * **Link for app** - нужно ввести значение URL, которое будет добавлено к основному URL вашего Telegram бота. Благодаря этому значению, будет открываться не бот, а сразу ваш магазин. Введите например `store`;
 
-![Форма настройки Direct Link](images/tg-direct-link-form-config.png){ width=300, loading=lazy }
+![Форма настройки Direct Link](../images/tg-direct-link-form-config.png){ width=300, loading=lazy }
 /// caption
 Форма настройки Direct Link
 ///
@@ -192,7 +194,7 @@ BotFather Telegram Mini App
 
 После создания, можно будет скопировать ссылку и переслать в группу или в личные сообщения.
 
-![Меню копирования Direct Link](images/tg-copy-direct-link.png){ width=300, loading=lazy }
+![Меню копирования Direct Link](../images/tg-copy-direct-link.png){ width=300, loading=lazy }
 /// caption
 Меню копирования Direct Link
 ///

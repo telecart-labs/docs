@@ -4,7 +4,9 @@ site_url: https://nikitakiselev.github.io/telecart-docs/
 nav:
   - index.md
   - install.md
-  - telegram.md
+  - Telegram:
+      - Настройка: telegram/telegram.md
+      - Кнопка для магазина: telegram/open-shop-link.md
   - update.md
   - uninstall.md
   - contacts.md
@@ -20,7 +22,6 @@ theme:
     - navigation.tracking
     - navigation.sections
     - toc.follow
-    - toc.integrate
     - navigation.top
     - search.highlight
 
@@ -32,6 +33,10 @@ markdown_extensions:
   - attr_list
   - pymdownx.tabbed:
       alternate_style: true
+  - toc:
+      permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
+      separator: "-"
 
 plugins:
   - search
