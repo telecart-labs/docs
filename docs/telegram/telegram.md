@@ -171,7 +171,7 @@ BotFather Telegram Mini App
 Демонстрация Direct Link, отправленной в чате Telegram.
 ///
 
-![Демонстрация Direct Link, отправленной в приложение Apple Mail.](../images/tg-direct-link-apple-mail-example.png){ width=500, loading=lazy }
+![Демонстрация Direct Link, отправленной в приложение Apple Mail.](./tg-direct-link-apple-mail-example.png){ width=500, loading=lazy }
 /// caption
 Демонстрация Direct Link, отправленной в приложение Apple Mail.
 ///
