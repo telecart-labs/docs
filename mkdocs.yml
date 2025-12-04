@@ -7,6 +7,7 @@ nav:
   - Telegram:
       - Настройка: telegram/telegram.md
       - Кнопка для магазина: telegram/open-shop-link.md
+      - Уведомления в группу: telegram/group-notifications.md
   - Аналитика:
       - Начало работы: analitycs/start.md
       - Цели: analitycs/goals.md
