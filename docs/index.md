@@ -9,10 +9,16 @@
 
 ---
 
-## Предварительные требования
+## Системные требования
 
 - **OpenCart** версии 3 или **ocStore** версии 3
 - **PHP** версии не ниже 7.4
+- **PHP модули**: 
+  - curl
+  - imagick
+  - mbstring
+  - json
+  - xml
 - Архив модуля. Скачать [TeleCart на LiveOpencart](https://liveopencart.ru/opencart-moduli-shablony/moduli/telecart).
 - Доступ к админ-панели OpenCart с правами администратора.
 
