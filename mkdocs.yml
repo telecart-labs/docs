@@ -13,6 +13,7 @@ nav:
       - Цели: analitycs/goals.md
   - Обновления:
       - Релизы:
+        - Версия v2.2.0: changelog/2.2.0.md
         - Версия v2.1.0: changelog/2.1.0.md
         - Версия v2.0.0: changelog/2.0.0.md
         - Версия v1.3.2: changelog/1.3.2.md
