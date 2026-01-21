@@ -11,6 +11,9 @@ nav:
   - Аналитика:
       - Начало работы: analitycs/start.md
       - Цели: analitycs/goals.md
+  - Дополнительные функции:
+      - Фасетные фильтры: features/facet.md
+      - Планировщик CRON: features/cron.md
   - Обновления:
       - Релизы:
         - Версия v2.2.0: changelog/2.2.0.md
