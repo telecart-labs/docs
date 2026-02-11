@@ -48,6 +48,9 @@ theme:
     - navigation.top
     - search.highlight
 
+extra_javascript:
+  - javascripts/yandex-metrika.js
+
 markdown_extensions:
   - admonition
   - pymdownx.details
