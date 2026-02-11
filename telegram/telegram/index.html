@@ -1,0 +1,1558 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.telecart.pro/telegram/telegram/">
+      
+      
+        <link rel="prev" href="../../install/">
+      
+      
+        <link rel="next" href="../open-shop-link/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Настройка - TeleCart Документация</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#настройка-telegram" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../.." title="TeleCart Документация" class="md-header__button md-logo" aria-label="TeleCart Документация" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TeleCart Документация
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Настройка
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TeleCart Документация" class="md-nav__button md-logo" aria-label="TeleCart Документация" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TeleCart Документация
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Быстрый старт
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Установка модуля
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Telegram
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Telegram
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Настройка
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Настройка
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#введение" class="md-nav__link">
+    <span class="md-ellipsis">
+      Введение
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#создание-бота" class="md-nav__link">
+    <span class="md-ellipsis">
+      Создание бота
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#создание-mini-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Создание Mini App
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Создание Mini App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Menu Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main App
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direct-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct Link
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open-shop-link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Кнопка для магазина
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../group-notifications/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Уведомления в группу
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Аналитика
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Аналитика
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analitycs/start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Начало работы
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analitycs/goals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Цели
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Дополнительные функции
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Дополнительные функции
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/facet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Фасетные фильтры
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/cron/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Планировщик CRON
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Обновления
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Обновления
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Релизы
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Релизы
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/2.2.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Версия v2.2.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/2.1.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Версия v2.1.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/2.0.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Версия v2.0.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/1.3.2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Версия v1.3.2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/1.3.1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Версия v1.3.1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/1.3.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Версия v1.3.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/1.2.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Версия v1.2.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Производительность
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Производительность
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../performance/images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Изображения
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../performance/cache/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Кеширование
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    TeleCart Pulse
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            TeleCart Pulse
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pulse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Общая информация
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../telecart-cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TeleCart CLI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../update/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Обновление модуля
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../uninstall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Удаление модуля
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Контакты
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Архитектура решения
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#введение" class="md-nav__link">
+    <span class="md-ellipsis">
+      Введение
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#создание-бота" class="md-nav__link">
+    <span class="md-ellipsis">
+      Создание бота
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#создание-mini-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Создание Mini App
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Создание Mini App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#menu-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      Menu Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main App
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direct-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct Link
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="настройка-telegram">Настройка Telegram<a class="headerlink" href="#настройка-telegram" title="Permanent link">&para;</a></h1>
+<h2 id="введение">Введение<a class="headerlink" href="#введение" title="Permanent link">&para;</a></h2>
+<p>Этот раздел подразумевает, что модуль уже установлен и инициализирован. Если нет, то сначала нужно <a href="../../install/">выполнить установку</a>.</p>
+<p>На текущий момент существует 2 способа создать бота в Telegram. С помощью текстовых команд в чате через <a href="https://t.me/botfather">@BotFather</a>, 
+либо использовать официальный Mini App, который прикреплён к BotFather. Использование Mini App намного удобнее. 
+В этой статье будет описан второй способ.</p>
+<p>Минимально необходимые действия, чтобы получить работающий Telegram-магазин:</p>
+<ol>
+<li>Создание бота</li>
+<li>Создание Mini App внутри Telegram Bot</li>
+<li>Выполнить настройку модуля TeleCart через админку OpenCart.</li>
+</ol>
+<p>Ниже я максимально подробно и со скриншотами распишу каждый из этих пунктов.</p>
+<h2 id="создание-бота">Создание бота<a class="headerlink" href="#создание-бота" title="Permanent link">&para;</a></h2>
+<p>В Telegram для этого используется специальный сервисный аккаунт — <a href="https://t.me/botfather">@BotFather</a>.
+Найдите его через поиск в Telegram, откройте и нажмите Start.</p>
+<figure>
+<p><a class="glightbox" href="../../images/telegram-bot-father.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Telegram BotFather" loading="lazy" src="../../images/telegram-bot-father.png" width="500," /></a></p>
+<figcaption>
+<p>Telegram BotFather</p>
+</figcaption>
+</figure>
+<p>Для того чтобы открыть <strong>BotFather</strong> как Mini App, нужно нажать на кнопку <strong>Open</strong>, слева от поля ввода сообщения. </p>
+<p><a class="glightbox" href="../../images/bot_father_miniapp_btn.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="center," alt="Кнопка открытия BotFather Mini App" loading="lazy" src="../../images/bot_father_miniapp_btn.png" /></a></p>
+<p>Откроется Min iApp приложение.</p>
+<figure>
+<p><a class="glightbox" href="../../images/telegram_botfather_miniapp.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="BotFather Telegram MiniApp" loading="lazy" src="../../images/telegram_botfather_miniapp.png" width="300," /></a></p>
+<figcaption>
+<p>BotFather Telegram Mini App</p>
+</figcaption>
+</figure>
+<p>Нажмите на кнопку "Create a New Bot" чтобы создать нового бота. Здесь нужно задать Bot Name и Bot username. Остальные поля по желанию.  </p>
+<ol>
+<li>
+<p><strong>Изображение для бота (аватар)</strong> — будет видно в списке чатов и на рабочем столе мобильного устройства, если пользователь добавит приложение туда. Рекомендуется использовать логотип своего магазина.</p>
+<div class="admonition warning">
+<p class="admonition-title">Внимание</p>
+<p>Ни в коем случае не используйте логотип Telegram на изображении бота. Бот будет удалён, а Ваш аккаунт можеть быть подвержен блокировке. Об этом они явно пишут в условиях: <a href="https://core.telegram.org/api/terms?utm_source=chatgpt.com#:~:text=You%20must%20not%20use%20the%20official%20Telegram%20logo%20for%20your%20app">You must not use the official Telegram logo for your app</a> </p>
+</div>
+</li>
+<li>
+<p><strong>Bot Name.</strong> Это отображаемое имя и может быть произвольной длины, обычно до ~64 символов (ограничения UI, точной цифры Telegram официально не указывает).</p>
+</li>
+<li><strong>About (About info)</strong> — не обязательное. Максимум 120 символов. Пользователи видят его в профиле бота.</li>
+<li><strong>Bot Username</strong> - уникальный username, используемый для ссылок. Длина от 5 до 32 символов, латиница, цифры, подчёркивания, обязательно оканчивается на <code>bot</code>.</li>
+</ol>
+<figure>
+<p><a class="glightbox" href="../../images/new_telegram_bot_form.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Форма создания нового Telegram Bot" loading="lazy" src="../../images/new_telegram_bot_form.png" width="300," /></a></p>
+<figcaption>
+<p>Форма создания нового Telegram Bot</p>
+</figcaption>
+</figure>
+<p>Нажмите кнопку "Create Bot" чтобы создать бота.</p>
+<figure>
+<p><a class="glightbox" href="../../images/created_tg_bot.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Просмотр созданного Telegram Bot" loading="lazy" src="../../images/created_tg_bot.png" width="300," /></a></p>
+<figcaption>
+<p>Просмотр созданного Telegram Bot</p>
+</figcaption>
+</figure>
+<p>Появится окно только что созданного бота. Из того, на что стоит сразу обратить внимание это</p>
+<ol>
+<li><code>BotToken</code>, который потребуется на следующих этапах для интеграции TeleCart модуля с Telegram Bot.</li>
+<li>Кнопка создания Mini Apps.</li>
+<li>Введённый ранее <strong>Bot username</strong>. Это ссылка для запуска бота. Нажмите на неё, чтобы открыть информацию о боте.</li>
+</ol>
+<p>В окне нажмите на кнопку "Отправить сообщение", чтобы запустить бота.</p>
+<figure>
+<p><a class="glightbox" href="../../images/tg_bot_send_message_btn.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Telegram Bot Отправить сообщение" loading="lazy" src="../../images/tg_bot_send_message_btn.png" width="300," /></a></p>
+<figcaption>
+<p>Кнопка отправки сообщения боту.</p>
+</figcaption>
+</figure>
+<p>Запустится бот, там нажмите кнопку "Старт", чтобы начать общение с ботом, либо отправьте команду <code>/start</code> в чат.</p>
+<figure>
+<p><a class="glightbox" href="../../images/tg_bot_start.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Отправка /start боту" loading="lazy" src="../../images/tg_bot_start.png" width="300," /></a></p>
+<figcaption>
+<p>Отправка команды <code>/start</code> боту</p>
+</figcaption>
+</figure>
+<h2 id="создание-mini-app">Создание Mini App<a class="headerlink" href="#создание-mini-app" title="Permanent link">&para;</a></h2>
+<p>Для создания Mini App, нужно зайти в <a href="https://t.me/botfather">@BotFather</a>, выбрать своего бота и в разделе Settings нажать на кнопку Mini Apps, чтобы перейти в форму просмотра и создания.</p>
+<figure>
+<p><a class="glightbox" href="../../images/create_mini_app_btn.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="img.png" loading="lazy" src="../../images/create_mini_app_btn.png" width="300," /></a></p>
+<figcaption>
+<p>Кнопка просмотра Mini App, привязанного к боту.</p>
+</figcaption>
+</figure>
+<p>На данный момент Telegram предлагает 3 способа запуска вашего приложения:</p>
+<ol>
+<li><strong>Menu Button</strong> - это кнопка для запуска магазина, которая отображается рядом с полем для ввода сообщения боту.</li>
+<li><strong>Main App</strong> - это кнопка для запуска магазина, которая отображается в форме информации о боте.</li>
+<li><strong>Direct Link</strong> - ссылка, с помощью которой можно будет напрямую запустить магазин. Эту ссылку удобно пересылать в группы, в личные сообщения.</li>
+</ol>
+<figure>
+<p><a class="glightbox" href="../../images/tg_mini_app_exec.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Форма настройки Telegram Mini App" loading="lazy" src="../../images/tg_mini_app_exec.png" width="300," /></a></p>
+<figcaption>
+<p>Форма настройки Telegram Mini App</p>
+</figcaption>
+</figure>
+<p>Каждый из этих способов требуется ссылку для Telegram Mini App. Эту ссылку можно найти в настройках TeleCart на вкладке Telegram.</p>
+<figure>
+<p><a class="glightbox" href="../../images/telecart-tg-mini-app-url.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Ссылка для Telegram Mini App" loading="lazy" src="../../images/telecart-tg-mini-app-url.png" width="500," /></a></p>
+<figcaption>
+<p>Ссылка для Telegram Mini App</p>
+</figcaption>
+</figure>
+<h3 id="menu-button">Menu Button<a class="headerlink" href="#menu-button" title="Permanent link">&para;</a></h3>
+<p>Это кнопка для запуска магазина, которая отображается рядом с полем для ввода сообщения боту.</p>
+<p>Требует 2 значения:</p>
+<ol>
+<li><strong>URL</strong> - Ссылка для Telegram Mini App. Берётся из настроек TeleCart.</li>
+<li><strong>Title</strong> - Текст на кнопке, любой текст, например "Магазин".</li>
+</ol>
+<figure>
+<p><a class="glightbox" href="../../images/tg-menu-btn-form.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Форма настройки Menu Button" loading="lazy" src="../../images/tg-menu-btn-form.png" width="300," /></a></p>
+<figcaption>
+<p>Форма настройки Menu Button</p>
+</figcaption>
+</figure>
+<p>Теперь в чате с ботом появилась кнопка "Магазин"</p>
+<figure>
+<p><a class="glightbox" href="../../images/tg-bot-menu-btn.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Демонстрация кнопки открытия магазина в чате с ботом" loading="lazy" src="../../images/tg-bot-menu-btn.png" width="300," /></a></p>
+<figcaption>
+<p>Демонстрация кнопки открытия магазина в чате с ботом</p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Информация</p>
+<p>Возможно нужно подождать несколько минут, прежде чем Telegram обновит свои конфигурации и сбросит кеш, прежде чем появится кнопка.</p>
+</div>
+<h3 id="main-app">Main App<a class="headerlink" href="#main-app" title="Permanent link">&para;</a></h3>
+<p>Эта кнопка, которая отображается в форме информации о боте.</p>
+<p>Здесь требуется задать только ссылку для Telegram Mini App. Берётся из настроек TeleCart.<br />
+Так же желательно выставить полноэкранный режим работы.</p>
+<figure>
+<p><a class="glightbox" href="../../images/main_app_conf.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Конфигурация Mini App" loading="lazy" src="../../images/main_app_conf.png" width="300," /></a></p>
+<figcaption>
+<p>Конфигурация Mini App</p>
+</figcaption>
+</figure>
+<p>В пункте "Launch Screen" вы можете более детально кастомизировать экран загрузки магазина, добавив свои иконки и изображения.
+Но это уже больше вопрос дизайна.</p>
+<p>После нажатия на кнопку "Save", результат работы можно посмотреть, открыл информацию о Вашем боте. </p>
+<div class="admonition note">
+<p class="admonition-title">Информация</p>
+<p>Возможно нужно подождать несколько минут, прежде чем Telegram обновит свои конфигурации и сбросит кеш, прежде чем появится кнопка.</p>
+</div>
+<figure>
+<p><a class="glightbox" href="../../images/tg-direct-link-config-form.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Кнопка запуска магазина из формы информации о боте" loading="lazy" src="../../images/tg-direct-link-config-form.png" width="300," /></a></p>
+<figcaption>
+<p>Кнопка запуска магазина из формы информации о боте</p>
+</figcaption>
+</figure>
+<h3 id="direct-link">Direct Link<a class="headerlink" href="#direct-link" title="Permanent link">&para;</a></h3>
+<p>После создания Mini App доступны такие возможности как создание прямой https ссылки непосредственно на ваш Telegram магазин.<br />
+Удобство этой ссылки заключается в том, что её можно отправить в любом Telegram сообщение, в e-mail рассылке, указать на сайте, 
+либо, например, сгенерировать QR код, распечатать и наклеить на дверь оффлайн магазина, если он есть. Это удобно и выглядит современно, вызывая доверие покупателей.</p>
+<figure>
+<p><a class="glightbox" href="../../tg-direct-link-example.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Демонстрация Direct Link, отправленной в чате" src="../../tg-direct-link-example.png" /></a></p>
+<figcaption>
+<p>Демонстрация Direct Link, отправленной в чате Telegram.</p>
+</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" href="../tg-direct-link-apple-mail-example.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Демонстрация Direct Link, отправленной в приложение Apple Mail." loading="lazy" src="../tg-direct-link-apple-mail-example.png" width="500," /></a></p>
+<figcaption>
+<p>Демонстрация Direct Link, отправленной в приложение Apple Mail.</p>
+</figcaption>
+</figure>
+<p>Итак, что нужно сделать, чтобы получить такую ссылку. 
+В настройках своего Telegram Bot (Зайти в <a href="https://t.me/BotFather" target="_blank">@BotFather</a>, открыть BotFather Mini App,
+выбрать своего бота и в разделе Settings нажать на кнопку Mini Apps, чтобы перейти в форму просмотра и создания.).</p>
+<p>В разделе "Direct Links" нужно создать новую Direct Link и ввести следующие данные:</p>
+<ul>
+<li><strong>Enter URL</strong> - ссылка для Telegram Mini App (Эту ссылку можно найти в настройках TeleCart на вкладке Telegram в админке OpenCart).</li>
+<li><strong>Metadata</strong> - картинка, заголовок и описание. Это будет использоваться при отображении ссылки в чатах и личных сообщениях. Лучше задать, для того, чтобы ссылки вызывали доверие.</li>
+<li><strong>Link for app</strong> - нужно ввести значение URL, которое будет добавлено к основному URL вашего Telegram бота. Благодаря этому значению, будет открываться не бот, а сразу ваш магазин. Введите например <code>store</code>;</li>
+</ul>
+<figure>
+<p><a class="glightbox" href="../../images/tg-direct-link-form-config.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Форма настройки Direct Link" loading="lazy" src="../../images/tg-direct-link-form-config.png" width="300," /></a></p>
+<figcaption>
+<p>Форма настройки Direct Link</p>
+</figcaption>
+</figure>
+<p>После создания, можно будет скопировать ссылку и переслать в группу или в личные сообщения.</p>
+<figure>
+<p><a class="glightbox" href="../../images/tg-copy-direct-link.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Меню копирования Direct Link" loading="lazy" src="../../images/tg-copy-direct-link.png" width="300," /></a></p>
+<figcaption>
+<p>Меню копирования Direct Link</p>
+</figcaption>
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["glightbox", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.sections", "navigation.path", "toc.follow", "navigation.top", "search.highlight"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../javascripts/yandex-metrika.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
