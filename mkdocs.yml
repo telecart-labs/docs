@@ -16,6 +16,9 @@ nav:
       - Планировщик CRON: features/cron.md
   - Обновления:
       - Релизы:
+        - Версия v2.3.0: changelog/2.3.0.md
+        - Версия v2.2.2: changelog/2.2.2.md
+        - Версия v2.2.1: changelog/2.2.1.md
         - Версия v2.2.0: changelog/2.2.0.md
         - Версия v2.1.0: changelog/2.1.0.md
         - Версия v2.0.0: changelog/2.0.0.md
